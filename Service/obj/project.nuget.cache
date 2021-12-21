@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZVgb1X6IQt6RCzYMudM5mnBxisnkUjAMfZnSrsbW7aJXKA2ZMJ4tzTp8d2gueMB56MstifVA56H5uMEkCfl+bA==",
+  "dgSpecHash": "GBeWLUiQ4vzh7FX0aOXeE6dzvga8x2GdvnbeIf78jDYdgMzYeypOE8eRW3yHEOjuoXAmY0zlI4GRIV2m5bWnew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Service\\Service.csproj",
+  "projectFilePath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dorot\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\dorot\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

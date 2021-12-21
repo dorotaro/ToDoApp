@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K8wZ5hXlW4kgjO67GMH+0g6cQrD93JrUNfMgsvyUXdVrVBxNTlYEKV9wZZQXJc/xuN7H+bugBCCOXsoKa6bmng==",
+  "dgSpecHash": "ta/oyehchVuMRaopUDS9a0OzcBkfMbDGbDZ8Jz2S6rMIwkHO6bz/2ihp5E3MiGD2Uj6HN5jh8a7od+5S94X7Tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dorot\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\dorot\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

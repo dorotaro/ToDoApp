@@ -988,11 +988,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\dorot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\obj\\",
+      "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dorot\\AppData\\Roaming\\NuGet\\NuGet.Config",

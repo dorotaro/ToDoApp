@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i5AETuzBn3P/viJesk+96ItmKVzSbM/vKPBegsnabw7o62c+JXTsL7A9TV5haSQzrfGXvg9AN+UcuStTKyj1bg==",
+  "dgSpecHash": "VDHtk+JmMQQfLYtDmVDHwhN5XdpOJ+jvSwFg8Jl+IDXJ/+8CYPEN1hkFuCKGzt/6vzdP6tlaPrldf+zr2Dizvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj",
+  "projectFilePath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dorot\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\dorot\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

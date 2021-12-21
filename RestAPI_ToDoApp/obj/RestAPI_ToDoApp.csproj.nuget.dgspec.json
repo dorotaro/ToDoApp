@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj": {}
+    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\dorot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dorot\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj": {
+    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj",
+        "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj",
         "projectName": "RestAPI_ToDoApp",
-        "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj",
+        "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\RestAPI_ToDoApp\\RestAPI_ToDoApp.csproj",
         "packagesPath": "C:\\Users\\dorot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\RestAPI_ToDoApp\\obj\\",
+        "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\RestAPI_ToDoApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dorot\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,8 +100,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Service\\Service.csproj"
+              "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Service\\Service.csproj"
               }
             }
           }
@@ -143,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Service\\Service.csproj": {
+    "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\dorot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Service\\obj\\",
+        "outputPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dorot\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -167,8 +167,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\Persistence\\Persistence.csproj"
+              "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\dorot\\Desktop\\BIT\\.NET\\code\\ToDoApp\\ToDoApp\\Persistence\\Persistence.csproj"
               }
             }
           }
