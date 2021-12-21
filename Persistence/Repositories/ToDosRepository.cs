@@ -30,8 +30,8 @@ namespace Persistence
         public async Task AddToDoItem(ToDoWriteModel toDoWriteModel)
         {
             var query = $"INSERT INTO {tableName} " +
-                        $"(Id, Title, Description, Difficulty, DateCreated)" +
-                        $"VALUES (@Id, @Title, @Description, @Difficulty, @DateCreated); ";
+                        $"(Id, Title, Description, Difficulty, DateCreated, IsDone)" +
+                        $"VALUES (@Id, @Title, @Description, @Difficulty, @DateCreated, @IsDone); ";
 
             var param = new ToDoWriteModel
             {
@@ -40,6 +40,7 @@ namespace Persistence
                 Description = toDoWriteModel.Description,
                 Difficulty = toDoWriteModel.Difficulty,
                 DateCreated = toDoWriteModel.DateCreated,
+                IsDone = toDoWriteModel.IsDone
             };
 
              await _sqlClient.Execute<ToDoReadModel>(query, param);
@@ -54,7 +55,7 @@ namespace Persistence
             //var toDo = await GetById(id);
 
             var query = $"UPDATE {tableName} " +
-                        $"SET Title=@Title, Description=@Description, Difficulty=@Difficulty" +
+                        $"SET Title=@Title, Description=@Description, Difficulty=@Difficulty, IsDone=@IsDone" +
                         $" WHERE Id=@Id";
 
             var param = new
@@ -63,7 +64,8 @@ namespace Persistence
                 Title = toDoWriteModel.Title,
                 Description = toDoWriteModel.Description,
                 Difficulty = toDoWriteModel.Difficulty,
-                DateCreated = toDoWriteModel.DateCreated,
+                IsDone = toDoWriteModel.IsDone,
+                DateCreated = toDoWriteModel.DateCreated
             };
 
             await _sqlClient.Execute<ToDoWriteModel>(query, param);

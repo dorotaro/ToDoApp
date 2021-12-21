@@ -35,7 +35,7 @@ namespace RestAPI_ToDoApp.Controllers
 
         [HttpPost]
         [Route("api/[controller]")]
-        public async Task<ActionResult> AddToDoItem(string title, string description, Difficulty difficulty)
+        public async Task<ActionResult> AddToDoItem(string title, string description, Difficulty difficulty, bool isDone)
         {
             var model = new ToDoRequestModel
             {
@@ -43,6 +43,7 @@ namespace RestAPI_ToDoApp.Controllers
                 Title = title,
                 Description = description,
                 Difficulty = difficulty,
+                IsDone = isDone,
                 DateCreated = DateTime.Now
             };
 
@@ -76,7 +77,7 @@ namespace RestAPI_ToDoApp.Controllers
 
         [HttpPut]
         [Route("api/[controller]/EditById")]
-        public async Task<ActionResult> EditToDoItem(Guid id, string newTitle, string newDescription, Difficulty newDifficulty)
+        public async Task<ActionResult> EditToDoItem(Guid id, string newTitle, string newDescription, Difficulty newDifficulty, bool newIsDone)
         {
             var toDo = await GetById(id);
 
@@ -86,6 +87,7 @@ namespace RestAPI_ToDoApp.Controllers
                 Title = newTitle,
                 Description = newDescription,
                 Difficulty = newDifficulty,
+                IsDone = newIsDone,
                 DateCreated = toDo.DateCreated
             };
 

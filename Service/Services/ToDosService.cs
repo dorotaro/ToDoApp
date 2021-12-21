@@ -21,7 +21,8 @@ namespace Service.Services
                 Title = toDoRequestModel.Title,
                 Description = toDoRequestModel.Description,
                 Difficulty = toDoRequestModel.Difficulty.ToString(),
-                DateCreated = toDoRequestModel.DateCreated,
+                IsDone = toDoRequestModel.IsDone,
+                DateCreated = toDoRequestModel.DateCreated
 
             };
 
@@ -38,6 +39,7 @@ namespace Service.Services
                 Title = model.Title,
                 Description = model.Description,
                 Difficulty = (Difficulty)Enum.Parse(typeof(Difficulty), model.Difficulty),
+                IsDone = model.IsDone,
                 DateCreated = model.DateCreated
             };
 
@@ -59,6 +61,7 @@ namespace Service.Services
                     Title = model.Title,
                     Description = model.Description,
                     Difficulty = (Difficulty)Enum.Parse(typeof(Difficulty), model.Difficulty),
+                    IsDone = model.IsDone,
                     DateCreated = model.DateCreated
                 });
                 
@@ -85,6 +88,7 @@ namespace Service.Services
                 Title = toDoRequestModel.Title,
                 Description = toDoRequestModel.Description,
                 Difficulty = toDoRequestModel.Difficulty.ToString(),
+                IsDone = toDoRequestModel.IsDone,
                 DateCreated = toDoRequestModel.DateCreated
             };
 
