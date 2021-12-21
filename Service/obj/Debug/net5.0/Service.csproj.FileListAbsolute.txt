@@ -1,0 +1,15 @@
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\bin\Debug\net5.0\Service.deps.json
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\bin\Debug\net5.0\Service.dll
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\bin\Debug\net5.0\ref\Service.dll
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\bin\Debug\net5.0\Service.pdb
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\bin\Debug\net5.0\Persistence.dll
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\bin\Debug\net5.0\Persistence.pdb
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.csproj.AssemblyReference.cache
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.dll
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\ref\Service.dll
+C:\Users\dorot\Desktop\BIT\.NET\code\ToDoApp\Service\obj\Debug\net5.0\Service.pdb
