@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace RestAPI_ToDoApp.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("todos")]
     public class ToDosController : ControllerBase
     {
         private readonly IToDosService _toDosService;
@@ -18,15 +18,16 @@ namespace RestAPI_ToDoApp.Controllers
             _toDosService = toDosService;
         }
 
+        //todos GET
         [HttpGet]
-        [Route("api/[controller]/GetById")]
+        [Route("{id}")]
         public async Task<ToDoResponseModel> GetById(Guid id)
         {
             return await _toDosService.GetById(id);
         }
 
+        //todos/{id} GET
         [HttpGet]
-        [Route("api/[controller]/GetAll")]
         public async Task<IEnumerable<ToDoResponseModel>> GetAll()
         {
             return await _toDosService.GetAll();
@@ -35,7 +36,7 @@ namespace RestAPI_ToDoApp.Controllers
 
         [HttpPost]
         [Route("api/[controller]")]
-        public async Task<ActionResult> AddToDoItem(string title, string description, Difficulty difficulty, bool isDone)
+        public async Task<ToDoResponseModel> AddToDoItem(string title, string description, Difficulty difficulty, bool isDone)
         {
             var model = new ToDoRequestModel
             {
@@ -47,9 +48,9 @@ namespace RestAPI_ToDoApp.Controllers
                 DateCreated = DateTime.Now
             };
 
-            await _toDosService.AddToDoItem(model);
+            var createdModel = await _toDosService.AddToDoItem(model);
 
-            return Ok();
+            return createdModel;
 
         }
 

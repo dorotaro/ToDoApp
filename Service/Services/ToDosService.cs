@@ -13,37 +13,26 @@ namespace Service.Services
             _toDosRepository = toDosRepository;
         }
 
-        public async Task AddToDoItem(ToDoRequestModel toDoRequestModel)
+        public async Task<ToDoResponseModel> AddToDoItem(ToDoRequestModel toDoRequestModel)
         {
-            var model = new ToDoWriteModel
-            {
-                Id = toDoRequestModel.Id,
-                Title = toDoRequestModel.Title,
-                Description = toDoRequestModel.Description,
-                Difficulty = toDoRequestModel.Difficulty.ToString(),
-                IsDone = toDoRequestModel.IsDone,
-                DateCreated = toDoRequestModel.DateCreated
 
-            };
+            //business logic is here - mapping to response model,
+            //and return to controller is only from this layer (not from persistence - that would be excessive)
 
-           await _toDosRepository.AddToDoItem(model);
+            var model = toDoRequestModel.MapToWriteModel();
             
+            await _toDosRepository.AddToDoItem(model);
+
+            return toDoRequestModel.MapToResponseModel();
+
         }
         public async Task<ToDoResponseModel> GetById(Guid id)
         {
            var model =  await _toDosRepository.GetById(id);
 
-            var responseModel = new ToDoResponseModel
-            {
-                Id = Guid.Parse(model.Id),
-                Title = model.Title,
-                Description = model.Description,
-                Difficulty = (Difficulty)Enum.Parse(typeof(Difficulty), model.Difficulty),
-                IsDone = model.IsDone,
-                DateCreated = model.DateCreated
-            };
+           var responseModel = model.MapToResponseModel();
 
-            return responseModel;
+           return responseModel;
         }
 
         public async Task<IEnumerable<ToDoResponseModel>> GetAll()
@@ -52,19 +41,9 @@ namespace Service.Services
 
             var responseModels = new List<ToDoResponseModel>();
 
-            foreach (var model in models) //foreach through ienumerable - why is this possible in htis case?
+            foreach (var model in models) //foreach through ienumerable - why is this possible in this case?
             {
-                responseModels.Add(
-                new ToDoResponseModel
-                {
-                    Id = Guid.Parse(model.Id),
-                    Title = model.Title,
-                    Description = model.Description,
-                    Difficulty = (Difficulty)Enum.Parse(typeof(Difficulty), model.Difficulty),
-                    IsDone = model.IsDone,
-                    DateCreated = model.DateCreated
-                });
-                
+                responseModels.Add(model.MapToResponseModel());
             }
 
             return responseModels;
@@ -82,15 +61,7 @@ namespace Service.Services
 
         public async Task EditToDoItem(ToDoRequestModel toDoRequestModel)
         {
-            var writeModel = new ToDoWriteModel
-            {
-                Id = toDoRequestModel.Id,
-                Title = toDoRequestModel.Title,
-                Description = toDoRequestModel.Description,
-                Difficulty = toDoRequestModel.Difficulty.ToString(),
-                IsDone = toDoRequestModel.IsDone,
-                DateCreated = toDoRequestModel.DateCreated
-            };
+            var writeModel = toDoRequestModel.MapToWriteModel();
 
            await _toDosRepository.EditToDoItem(writeModel);
 

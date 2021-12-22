@@ -8,7 +8,7 @@ namespace Persistence
     {
         Task<ToDoReadModel> GetById (Guid Id);
         Task<IEnumerable<ToDoReadModel>> GetAll();
-        Task AddToDoItem(ToDoWriteModel toDoWriteModel);
+        Task AddToDoItem  (ToDoWriteModel toDoWriteModel);
         Task EditToDoItem(ToDoWriteModel toDoWriteModel);
         Task DeleteToDoItem(Guid id);
         Task DeleteAll();

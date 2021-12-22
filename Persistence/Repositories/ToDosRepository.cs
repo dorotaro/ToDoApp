@@ -43,17 +43,12 @@ namespace Persistence
                 IsDone = toDoWriteModel.IsDone
             };
 
-             await _sqlClient.Execute<ToDoReadModel>(query, param);
+            await _sqlClient.Execute<ToDoReadModel>(query, param);
 
-            
-
-            //return ToReadModel(param);
         }
 
         public async Task EditToDoItem(ToDoWriteModel toDoWriteModel)
         {
-            //var toDo = await GetById(id);
-
             var query = $"UPDATE {tableName} " +
                         $"SET Title=@Title, Description=@Description, Difficulty=@Difficulty, IsDone=@IsDone" +
                         $" WHERE Id=@Id";
