@@ -59,15 +59,13 @@ namespace Service.Services
             await _toDosRepository.DeleteToDoItem(id);
         }
 
-        public async Task EditToDoItem(ToDoRequestModel toDoRequestModel)
+        public async Task<ToDoResponseModel> EditToDoItem(ToDoRequestModel toDoRequestModel)
         {
             var writeModel = toDoRequestModel.MapToWriteModel();
 
            await _toDosRepository.EditToDoItem(writeModel);
 
-             
-                
-
+            return toDoRequestModel.MapToResponseModel();
         }
 
        

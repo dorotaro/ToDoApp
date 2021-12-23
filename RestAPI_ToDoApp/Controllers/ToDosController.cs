@@ -78,7 +78,7 @@ namespace RestAPI_ToDoApp.Controllers
 
         [HttpPut]
         [Route("api/[controller]/EditById")]
-        public async Task<ActionResult> EditToDoItem(Guid id, string newTitle, string newDescription, Difficulty newDifficulty, bool newIsDone)
+        public async Task<ToDoResponseModel> EditToDoItem(Guid id, string newTitle, string newDescription, Difficulty newDifficulty, bool newIsDone)
         {
             var toDo = await GetById(id);
 
@@ -94,7 +94,9 @@ namespace RestAPI_ToDoApp.Controllers
 
             await _toDosService.EditToDoItem(editedToDo);
 
-            return Ok();
+            var editedModel = await _toDosService.EditToDoItem(editedToDo);
+
+            return editedModel;
         }
     }
 }

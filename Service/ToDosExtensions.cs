@@ -32,6 +32,18 @@ namespace Service
             };
         }
 
+        /*public static ToDoResponseModel MapToResponseModel(this ToDoWriteModel model)
+        {
+            return new ToDoResponseModel
+            {
+                Id = Guid.Parse(model.Id),
+                Description = model.Description,
+                Difficulty = (Difficulty)Enum.Parse(typeof(Difficulty), model.Difficulty),
+                IsDone = model.IsDone,
+                DateCreated = model.DateCreated
+            };
+        }*/
+
         public static ToDoWriteModel MapToWriteModel(this ToDoRequestModel model)
         {
             return new ToDoWriteModel
